@@ -1,0 +1,73 @@
+I've omitted a bit of information here for the sake of brevity, check out notes.txt if you want
+| - Packet seperator
+, - Variable seperator
+
+Packet . - Ping
+Example: "."
+
+Packet m - Mouse state update 
+Example: "m,27,290,265"
+
+Var 1 - Mouse X
+Var 2 - Mouse Y
+Var 3 - Mouse Angle 
+
+This packet is sent when:
+1. The player is spawned and
+2. The player moved their mouse
+
+
+Packet k - Keypress
+Example: "k,6,1"
+
+Var 1 - Input type
+0= Left,
+1= Right,
+2= Up,
+3= Down,
+4= Reloading,
+5= Spacebar,
+6= Mouse Click
+
+Var 2 - Input pressed/released
+0= Released,
+1= Pressed
+
+Note(s): If you spam the server with this packet, especially while 
+respawning, you have a high chance of being kicked
+
+
+Packet s - Join game
+Example: "s"
+
+
+Packet w - Change gun
+Example: "w,2"
+
+Var 1 - Gun type
+0= Pistol
+1= Assault
+2= Sniper
+3= Shotgun
+4= Shotgun-pistol (AKA Godpistol)
+5= Assault-pistol
+
+Fun Fact: The Assault-Pistol can actually *heal* barriers/turrets at a far enough range
+
+
+Packet r - ?
+Example: "r,8.578000"
+
+Note(s): This packet doesn't seem to affect anything in any way, so you can ignore it
+
+
+Packet c - Chat
+Example: "c,bots never die"
+
+Var 1 - Chat message
+
+Note(s): Don't spam this packet or send the same message multiple times or you'll be kicked
+
+--Under Construction--
+Packet 
+
