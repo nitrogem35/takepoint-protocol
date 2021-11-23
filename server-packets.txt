@@ -2,13 +2,16 @@
 , - Variable separator
 
 Packet a - Player Spawned
+Example: ""
+
 Var 1 - Player ID
 Var 2 - Team ID
 0= red,
 1= green,
 2= blue
 Var 3 - 
-
+Var 15 - Viewbox Width
+Var 16 - Viewbox Height
 
 Packet b - Player Data (main)
 Example: "b,20,-200,200,-3,3,360,"
