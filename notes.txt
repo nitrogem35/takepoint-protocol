@@ -8,3 +8,5 @@ In order to keep the connection alive, the client must:
   -Create and send a hash whenever packet an is received
   -Create and send a captcha token whenever packet ce is received
   
+-In javascript/node.js, you can use the following code to decode packets:
+  var text = new TextDecoder().decode(packet)
