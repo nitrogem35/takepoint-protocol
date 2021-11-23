@@ -1,1 +1,10 @@
-
+In order to open a connection to the server, the cilent must:
+  -Send User-Agent and the correct Origin (https://takepoint.io) in the headers
+  -Not have more than 2 connections already opened on that ip address
+ 
+In order to keep the connection alive, the client must:
+  -Send a captcha token on connection open
+  -Send an input packet every 120s or less
+  -Create and send a hash whenever packet an is received
+  -Create and send a captcha token whenever packet ce is received
+  
