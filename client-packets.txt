@@ -111,3 +111,9 @@ Packet ac  - Login (via cookie)
 Example: "8689106783$2y$10$JW6CLxaOolNNSOTgfzmJfuHbySuOcrxZXGLygEYBHnFFFMLDs4Pi"
 
 Var 1 - Cookie
+
+
+Packet x - Disable stats tracking
+Example: "x,1"
+
+Var 1 - ?
