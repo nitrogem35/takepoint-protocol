@@ -5,6 +5,9 @@ I've omitted a bit of information here for the sake of brevity, check out notes.
 Packet . - Ping
 Example: "."
 
+
+--Input Packets--
+
 Packet m - Mouse state update 
 Example: "m,27,290,265"
 
@@ -68,6 +71,43 @@ Var 1 - Chat message
 
 Note(s): Don't spam this packet or send the same message multiple times or you'll be kicked
 
---Under Construction--
-Packet 
 
+--Security Packets--
+
+Packet t - Hash
+Example: "t,51e14250fc08d44ccc09dbe8b270fe063d56abf8477b9e07862d79ecb463a12d"
+
+Var 1 - Hash
+
+
+Packet v - Captcha
+Example: "v,03AGdBq25oTT-anSjjiJxQv2t2BE1QJJoi-vrooyznaTzS_QbHp6H_DxdmgVPmD_FNVKzaac75eMXzNx6PlLmzDY99Ls9VPhe9vtfsDjmTfRfuWXDtNHzo-joxDcudyt24oZJpva1QoeVY5ZRr2lxM_k9hYqpmxtweIr9GgIwHUPq7JZSdcf4eUcJMFwnCfgvorV5O0osoagGb-bQBKJYl3ChN06rkHFdE1zsUUoYQh5R39vV_4tGkmK2SQcEr1SX-eebr5-2bR-yeDDf4mPTRFIR1zx-H_fbyfAsP68XNdMQTdGUj6Pl-4c09NZb52jBOj1WxOKF_1T9ifb4Rmp3UGrJ8qkGmT_kXvWpQ2P7mYFFyAhs7eJkl1wvLNqrgCk3iPikkrVvhnPpsrITF4jZIMc_wFeGGUK0C7-o312IeH09srNommRXeqjc"
+
+Var 1 - Captcha token
+
+
+--Auth Packets--
+
+Packet ao - Logout
+Example: "ao"
+
+
+Packet ar - Register
+Example: "ar,Guest12345,qwertyuiop@gmail.com,123xyz"
+
+Var 1 - Username
+Var 2 - Email
+Var 3 - Password
+
+Packet al - Login (via user & password)
+Example: "al,nitrogem35,123xyz,1"
+
+Var 1 - Username
+Var 2 - Password
+Var 3 - ?
+
+
+Packet ac  - Login (via cookie)
+Example: "8689106783$2y$10$JW6CLxaOolNNSOTgfzmJfuHbySuOcrxZXGLygEYBHnFFFMLDs4Pi"
+
+Var 1 - Cookie
