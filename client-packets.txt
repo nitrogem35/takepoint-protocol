@@ -1,6 +1,6 @@
 I've omitted a bit of information here for the sake of brevity, check out notes.txt if you want
-| - Packet seperator
-, - Variable seperator
+| - Packet separator
+, - Variable separator
 
 Packet . - Ping
 Example: "."
