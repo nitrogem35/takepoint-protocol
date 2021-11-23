@@ -1,1 +1,26 @@
+| - Packet separator
+, - Variable separator
 
+Packet a - Player Spawned
+Var 1 - Player ID
+Var 2 - Team ID
+0= red,
+1= green,
+2= blue
+Var 3 - 
+
+
+Packet b - Player Data (main)
+Example: "b,20,-200,200,-3,3,360,"
+
+Var 1 - Player ID
+Var 2 - X-Pos
+Var 3 - Y-Pos
+Var 4 - X-Accel
+Var 5 - Y-Accel
+Var 6 - Player angle
+
+Packet e - Player Exit Screen
+Example: "e,2"
+
+Var 1 - Player ID
